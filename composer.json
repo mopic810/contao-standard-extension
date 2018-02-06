@@ -1,0 +1,40 @@
+{
+	"name":"mopic810/contao-standard-extension",
+	"description":"Extension for Contao.",
+	"keywords":["contao","bundle","extension"],
+	"type":"contao-bundle",
+	"homepage":"http://www.tino-kupke.de",
+	"license":"MIT",
+	"authors":[
+		{
+			"name":"Tino Kupke",
+			"homepage":"http://www.tino-kupke.de",
+			"role":"Developer"
+		}
+	],
+	"support":{
+		"source":"https://github.com/mopic810/contao-standard-extension"
+	},
+	"require":{
+		"php":">=5.5",
+		"contao/core-bundle":"^4.3"
+	},
+	"require-dev": {
+		"contao/manager-plugin": "^2.0"
+	},
+	"conflict": {
+		"contao/core": "*",
+		"contao/manager-plugin": "<2.0 || >=3.0"
+	},
+	"autoload":{
+		"psr-4": {
+			"Mopic\\StandardExtension\\": "src/"
+		}
+	},
+	"extra": {
+		 "contao-manager-plugin": "Mopic\\StandardExtension\\ContaoManagerPlugin"
+	},
+	"replace":{
+		"contao-legacy/standard-extension":"self.version"
+	}
+}
