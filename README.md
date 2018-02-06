@@ -1,7 +1,7 @@
-# Offer Bundle - Contao Extension
+# Contao Standard Extension
 
 ## Installation
 
 ```sh
-$ composer require mopic810/contao-offer-bundle
+$ composer require mopic810/contao-standard-extension
 ```
